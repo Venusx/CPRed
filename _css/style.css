@@ -1,0 +1,297 @@
+/* Color Pallet
+#363537 - JET
+#EF2D56 - AMARANTH
+#01BAEF - CYAN
+#FFBE0B - MIKADO YELLOW
+#29BF12 - KELLY GREEN
+*/
+@font-face {
+  font-family: Cyberpunk;
+  src: url("../_files/cyberpunk-regular.ttf");
+}
+
+/***************************************
+              Opening
+***************************************/
+
+#splashscreen {
+	position: fixed;
+	margin: 15%;
+	background-color: #363537;
+	z-index: 999999;
+}
+
+blockquote{
+  font-size: 30px;
+  border-left: 10px solid #ccc;
+  padding: 0 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+
+blockquote:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #ccc;
+  font-size: 3em;
+}
+
+/***************************************
+               Global
+***************************************/
+a {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+a:hover {
+	color: #FF0000;
+}
+
+article {
+	background-color: #363537;
+	width: 60%;
+	margin: 15px auto;
+}
+
+body {
+	background-color: #363537;
+	color: #FF0000;
+}
+
+/* box model fix*/
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+	padding: 10px;
+}
+
+div p {
+	margin-bottom: 10px;
+}
+
+/**************************************
+                 Header
+**************************************/
+.btn a {
+	color: #FF0000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.btn a:hover {
+	color: #FF0000;
+}
+
+li {
+	display: inline-block;
+}
+
+li a {
+	padding: 0px 10px;
+}
+
+header {
+	background: #363537;
+	width: 100%;
+	height: 30%;
+}
+
+ul {
+	text-align: center;
+}
+
+.menuTop {
+	background: #000000;
+	color: #FF0000;
+	padding: 5px;
+	width: 100%;
+}
+
+.siteLogo {
+	color: #FF0000;
+	display: inline;
+	font-family: 'Cyberpunk', monospace;
+	font-size: 4em;
+	letter-spacing: -10px;
+	vertical-align: text-bottom;
+}
+
+.subLogo {
+	color: #FF0000;
+	display: inline-block;
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	padding-left: 5px;
+	text-transform: uppercase;
+	vertical-align: text-bottom;
+}
+
+/**************************************
+                  Body
+**************************************/
+
+button {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #000000;
+	color: #FF0000;
+	border: 2px solid #FF0000;
+	padding: 5px 10px;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+	font-size: .75em;
+}
+
+button:hover {
+	background-color: #FF0000;
+	color: #000000;
+}
+
+div ul li {
+	display: block;
+	margin-bottom: 2px;
+	text-align: left;
+}
+
+.bold {
+    display: inline;
+    font-weight: bold;
+}
+
+.container {
+	background-color: black;
+	display: flex;
+	padding: 20px 20px;
+	border: 2px solid #FF0000;
+	border-radius: 25px;
+}
+
+.left-half {
+	border-right: 2px solid #FF0000;
+	flex: 30%;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.15em;
+	padding: 50px 5px;
+}
+
+.left-half img {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 75%;
+}
+
+.right-half {
+	display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+	flex: 70%;
+	font-family: 'Special Elite', cursive;
+	font-size: 1.5em;
+	padding: 50px;
+	margin-left: 5px;
+}
+
+.right-half p {
+	padding-bottom: 5px;
+}
+
+#lore {
+	display: block;
+	text-align: justify;
+}
+
+#lifeyears li {
+	display: list-item;
+	list-style: decimal inside;
+}
+
+/**************************************
+                Footer
+**************************************/
+
+footer {
+	background: #000000;
+	color: #FF0000;
+	display: block;
+	width: 100%;
+}
+footer p {
+	text-align: center;
+	font-size: 1em;
+	font-weight: 900;
+	vertical-align: text-bottom;
+	text-transform: uppercase;
+	padding: 5px;
+}
+
+/**************************************
+             Media Queries
+**************************************/
+
+/* Smartphones and Tablets (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+
+	.siteLogo {
+		display: block;
+		font-size: 3em;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+
+	.subLogo {
+		display: block;
+		font-size: 1em;
+		text-align: center;
+	}
+}
+
+/*Snaps site to center using max width*/
+
+@media only screen and (max-width: 768px) {
+  .siteLogo {
+		display: block;
+		font-size: 3em;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+
+	.subLogo {
+		display: block;
+		font-size: 1em;
+		text-align: center;
+	}
+}
+
+/* Stacks columns on top of each other at 768px screen width and lower, adjusts font size and footer*/
+@media screen and (max-width: 768px) {
+	.container {
+		display: block;
+		width: 90%;
+	}
+	.left-half {
+		border-right: none;
+		border-bottom: 2px solid #29BF12;
+		font-size: 1.25em;
+		margin-bottom: 20px;
+		padding: 30px;
+	}
+	.right-half {
+		font-size: 1.15em;
+		padding: 30px;
+	}
+	footer {
+		margin-top: 25px;
+	}
+}
