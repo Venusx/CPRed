@@ -1,5 +1,8 @@
 # Don't track content of these folders
 _files/
+_js/functions.js
+_js/lifepath.js
+_js/script.js
 
 # Compiled source #
 ###################
