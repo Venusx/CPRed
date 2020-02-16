@@ -19,6 +19,7 @@
 	margin: 15%;
 	background-color: #363537;
 	z-index: 999999;
+	min-width: 500px;
 }
 
 blockquote{
