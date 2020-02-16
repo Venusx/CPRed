@@ -38,6 +38,15 @@
           <div id="roleChoice"></div>
           <div id="roleInfoHover"></div>
     </div>
+    <!-- 5 seconds silence for chrome to autoplay -->
+    <audio id="player" autoplay="true" loop="true">
+      <source src="_files/_music/drones_in_space.mp3" type="audio/mp3">
+    </audio>
+    <div>
+      <button onclick="document.getElementById('player').play()"><img src="_files/_images/icon_speaker.png"></button>
+      <button onclick="document.getElementById('player').pause()"><img src="_files/_images/icon_pause.png"></button>
+      <button onclick="document.getElementById('player').muted=!document.getElementById('player').muted"><img src="_files/_images/icon_mute.png"></button>
+    </div>
     <footer>
       <p id="footer"></p>
     </footer>

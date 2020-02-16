@@ -18,6 +18,9 @@ for (i = 0; i < roleArray.length; i++) {
 function p1Role(x) {
 	p1RoleChoice = roleArray[x];
 	document.getElementById("roleChoice").innerHTML = "You Chose: " + p1RoleChoice;
+	if (p1RoleChoice == "Rockerboy") {
+		window.location.replace("file:///C:/Users/vanes/Documents/cyberpunk%20red/roles/" + p1RoleChoice + ".html");
+	}
 }
 
 function roleInfoChoice(x) {

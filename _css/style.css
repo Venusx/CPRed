@@ -80,6 +80,12 @@ div p {
 	margin-bottom: 10px;
 }
 
+#player {
+	content: url(_files/_images/icon_speaker.png);
+    height: 50px;
+    width: 50px;
+}
+
 /**************************************
                  Header
 **************************************/
@@ -144,7 +150,7 @@ ul {
 
 button {
 	font-family: 'Roboto Condensed', sans-serif;
-	background-color: #000000;
+	background-color: #363537;
 	color: #FF0000;
 	border: 2px solid #FF0000;
 	padding: 5px 10px;
