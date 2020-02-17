@@ -1,6 +1,6 @@
 var roleArray = ["Rockerboy", "Solo", "Netrunner", "Tech", "Media", "Lawmen", "Exec", "Fixer", "Nomad"];
 var roleInfo = ["Rock and roll rebels who use performance and rhetoric to fight authority.<br>If you live to rock, this is where you belong. As a Rockerboy, you’re one of the street poets, the social conscience, and a rebel of the Age of The Red.", 
-				"Assassins, bodyguards, killers, and soldiers for hire in a lawless new world.",
+				"Assassins, bodyguards, killers, and soldiers for hire in a lawless new world.<br>You were re-born with a gun in your hand—the flesh and blood hand, not the metallic weapons factory that covers most of your other arm.",
 				"Cybernetic master hackers of the post–NET world and brain burning secret stealers.",
 				"Renegade mechanics and doctors patching up meat and metal alike.",
 				"Newsmen, media stars, and social influencers risking it all for the truth.<br>*Not Available",

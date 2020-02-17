@@ -1,4 +1,8 @@
 var quotes = [
+	"music always gets hammered down to the three a's. axe, attitude, and audience.<br><p align='right'> kerry eurodyn",
+	"this isn't going to hurt a bit. Well, maybe a little. Quit screamin ’ willya? How am I supposed to get this thing stuck on if you keep twitching like that?<br><p align='right'>scenes From Savage Doc's",
+	"They're so... like... weak and flimsy, you know? you reach out and touch 'em and they... die...<br><p align='right'>unknown cyberpsycho",
+	"In the Future, there’s no place to hide from yourself...<br><p align='right'>Lyle McClellan, Network 5",
 	"The Rules:<br>1) Style Over Substance. 2) Attitude is Everything. 3) Always take It to the Edge. 4) Break the Rules.<br><p align='right'>RIPPERJACK",
 	"Always take it to the Edge. It's the Cyberpunk way.<br><p align='right'> Johnny Silverhand",
 	"I'm not a man or a machine. I'm just something in between. I'm all love—a dynamo So push the button and let me go.<br><p align='right'> —Lovin' Every Minute of It<br> 1984 Zomba Enterprises Inc. (ASCAP)</p>",
