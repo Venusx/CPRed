@@ -1,4 +1,11 @@
 var quotes = [
+	"Nothing's free. And if a corporation made it, the hidden costs are double...<br><p align='right'>Unknown",
+	"Nobody ever leaves Night City. Except in a body bag.",
+	"Night city.... Ahwoooo!<br><p align='right'>Unknown",
+	"It's not the  Golden Age of the 2020's, choomba. But the Street still works.<br><p align='right'>Trace Santiago",
+	"The City of the Fallen Angels. Not to mention the Legion, thE ChromerS, the Gilligans, the Inquisitors...<br><p align='right'> Lt. Strawberry Morressey, NCPD",
+	"cyberpunk is what you  make it.<br><p align='right'>Maximum Mike",
+	"the music takes us to the heart of our culture and allows us to monitor its pulse<br><p align='right'>rockerboy magazine",
 	"music always gets hammered down to the three a's. axe, attitude, and audience.<br><p align='right'> kerry eurodyn",
 	"this isn't going to hurt a bit. Well, maybe a little. Quit screamin ’ willya? How am I supposed to get this thing stuck on if you keep twitching like that?<br><p align='right'>scenes From Savage Doc's",
 	"They're so... like... weak and flimsy, you know? you reach out and touch 'em and they... die...<br><p align='right'>unknown cyberpsycho",

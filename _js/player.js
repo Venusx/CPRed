@@ -7,7 +7,7 @@ var roleInfo = ["Rock and roll rebels who use performance and rhetoric to fight 
 				"Maximum lawmen patrolling the mean streets and road warrior highways beyond.<br>*Not Available",
 				"Corporate power brokers and business raiders fighting to restore the rule of the Megacorps.<br>*Not Available",
 				"Deal makers, smugglers, organizers, and information brokers on the post–war streets of the future.",
-				"Transportation experts and ultimate road warriors."];
+				"Transportation experts and ultimate road warriors.<br>Years ago, the Corps drove your family off the Farm. They rolled in, took over the land, and put renta-cops all over the place. But that was Before the War."];
 
 var p1RoleChoice;
 
@@ -18,9 +18,9 @@ for (i = 0; i < roleArray.length; i++) {
 function p1Role(x) {
 	p1RoleChoice = roleArray[x];
 	document.getElementById("roleChoice").innerHTML = "You Chose: " + p1RoleChoice;
-	if (p1RoleChoice == "Rockerboy") {
-		window.location.replace("file:///C:/Users/vanes/Documents/cyberpunk%20red/roles/" + p1RoleChoice + ".html");
-	}
+	window.setTimeout(function() {
+		window.location.href = "file:///C:/Users/vanes/Documents/cyberpunk%20red/roles/" + p1RoleChoice + ".html";
+	}, 5000);
 }
 
 function roleInfoChoice(x) {
