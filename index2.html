@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="_css/reset.css">
     <link rel="stylesheet" type="text/css" href="_css/style.css">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Condensed|Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Squada+One|IBM+Plex+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
     <header id="header">
@@ -32,12 +32,16 @@
         <script type="text/javascript" src="_js/script.js"></script>
       </div>
     </article> from other version-->
-    <div>
-      <h1><center>WELCOME TO THE TIME OF THE RED</center></h1>
-        <p>Choose your Role.</p>
-          <div id="roleChoice"></div>
-          <div id="roleInfoHover"></div>
-    </div>
+    <div class="box">
+      <h2>WELCOME TO THE TIME OF THE RED</b></h2>
+        <div id="leftHalf">
+          <p class="innerBox">Choose your role:</p>
+          <div class="innerBox" id="roleChoice"></div>
+        </div><!--left half-->
+        <div id="rightHalf">
+          <div class="innerBox" id="roleInfoHover"></div>
+        </div><!--right half-->
+    </div><!--box-->
     <!-- 5 seconds silence for chrome to autoplay -->
     <audio id="player" autoplay="true" loop="true">
       <source src="_files/_music/drones_in_space.mp3" type="audio/mp3">
