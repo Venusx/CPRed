@@ -1,13 +1,16 @@
 /* Color Pallet
-#363537 - JET
-#EF2D56 - AMARANTH
-#01BAEF - CYAN
-#FFBE0B - MIKADO YELLOW
-#29BF12 - KELLY GREEN
+#FF0000 - RED
+
 */
+
 @font-face {
   font-family: Cyberpunk;
   src: url("../_files/cyberpunk-regular.ttf");
+}
+
+@font-face {
+	font-family: ibm-semi-narrow;
+	src: url("../_files/3270SemiNarrow.ttf");
 }
 
 /***************************************
@@ -97,6 +100,14 @@ h2 {
 	flex-basis: 100%;
 }
 
+#roleInfoHover h2 {
+	padding: 15px;
+	font-family: 'Squada One', cursive;
+	font-weight: bold;
+	font-size: 30px;
+	color: #ff0000;
+}
+
 p {
 	padding: 5px 0px;
 }
@@ -118,7 +129,7 @@ p {
 }
 
 .btn a:hover {
-	color: #FF0000;
+	filter: invert(100%);	
 }
 
 li {
@@ -144,7 +155,8 @@ ul {
 	color: #FF0000;
 	padding: 5px;
 	width: 100%;
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'ibm-semi-narrow','IBM Plex Mono', monospace;
+	font-size: 2.5em;
 }
 
 .siteLogo {
@@ -156,12 +168,20 @@ ul {
 	vertical-align: text-bottom;
 }
 
+.siteLogo:hover {
+	filter: invert(100%);	
+}
+
 .subLogo {
 	color: #FF0000;
 	font-family: Arial, sans-serif;
 	font-size: 1em;
 	text-transform: uppercase;
 	margin-top: -20px;
+}
+
+.subLogo:hover {
+	filter: invert(100%);	
 }
 
 /**************************************
@@ -192,10 +212,10 @@ ul {
 
 #leftHalf {
 	width: 30%;
-	font-size: 1.15em;
+	font-size: 1.5em;
     flex-grow: 0;
     flex-shrink: 0;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'ibm-semi-narrow','IBM Plex Mono', monospace;
     font-weight: bold;
 }
 
@@ -264,26 +284,6 @@ div ul li {
     font-weight: bold;
 }
 
-
-.left-half {
-	border-right: 2px solid #FF0000;
-	flex: 60%;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 1.15em;
-	padding: 50px 5px;
-}
-
-.right-half {
-	display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
-	flex:40%;
-	font-family: 'Special Elite', cursive;
-	font-size: 1.5em;
-	padding: 50px;
-	margin-left: 5px;
-}
-
 #lore {
 	display: block;
 	text-align: justify;
@@ -296,9 +296,14 @@ div ul li {
 
 #roleInfoHover {
 	height: 100%;
-	font-family: 'IBM Plex Mono', monospace;
-	letter-spacing: 2px;
+	font-family: 'ibm-semi-narrow','IBM Plex Mono', monospace;
+	font-size: 1.5em;
+	letter-spacing: 3px;
 	line-height: 16pt;
+}
+
+#roleChoice p:hover {
+	color:#ff0000;
 }
 
 /**************************************
@@ -343,7 +348,7 @@ footer p {
 
 /*Snaps site to center using max width*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .siteLogo {
 		display: block;
 		font-size: 3em;
@@ -356,19 +361,65 @@ footer p {
 		font-size: 1em;
 		text-align: center;
 	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.menuTop {
+		font-size: 1.5em;
+	}
+
+	#leftHalf{
+		width: 100%;
+		text-align: center;
+	}
+
+	#rightHalf{
+		width: 100%;
+	}
+
+	#roleInfoHover {
+		line-height: 18pt;
+		letter-spacing: normal;
+		text-align: justify;
+		font-size: 12pt;
+	}
+
+	#roleInfoHover h2 {
+		font-size: 20px;
+		padding: 0;
+	}
 }
 
-/* Stacks columns on top of each other at 768px screen width and lower, adjusts font size and footer*/
+/* Stacks columns on top of each other at 768px screen width and lower*/
 @media screen and (max-width: 768px) {
 	.box {
-		display: block;
 		width: 90%;
 	}
-	.left {
-	}
-	.right-half {
-	}
+
 	footer {
 		margin-top: 25px;
 	}
 }
+
+/* Tablets */
+@media only screen and (max-width: 1024px)  {
+
+	#roleInfoHover {
+		line-height: 18pt;
+		letter-spacing: normal;
+		text-align: justify;
+		font-size: 12pt;
+	}
+
+	#leftHalf {
+		font-size: 1em;
+	}
+
+	#roleInfoHover h2 {
+		font-size: 18pt;
+		padding: 5px;
+	}
+}
+

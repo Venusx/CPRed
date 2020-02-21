@@ -9,11 +9,14 @@ var roleInfo = ["<p>Rock and roll rebels who use performance and rhetoric to fig
 				"<p>Deal makers, smugglers, organizers, and information brokers on the post–war streets of the future.</p>",
 				"<p>Transportation experts and ultimate road warriors.<br></p><p>Years ago, the Corps drove your family off the Farm. They rolled in, took over the land, and put renta-cops all over the place. But that was Before the War.</p>"];
 
+var mouseOutText = "<h2><center>A MOST IMPORTANT CHOICE</center></h2><br><p>Even after a massive war between Megacorporations followed by an atomic bombing, the world of Cyberpunk is a combination of savage, sophisticated, modern, and retro– grade.</p><br><p>Fashion–model beautiful Techs rub shoulders with battle–armored road warriors, all of them making the scene in the hottest dance clubs, sleaziest bars, and meanest streets this side of the post holocaust.</p>";
 var p1RoleChoice;
 
 for (i = 0; i < roleArray.length; i++) {
-	document.getElementById("roleChoice").innerHTML += "<p onmouseover='roleInfoChoice(" + i + ")' onclick='p1Role(" + i + ")'>" + roleArray[i] + " " + "</p>";
+	document.getElementById("roleChoice").innerHTML += "<p onmouseover='roleInfoChoice(" + i + ")' onclick='p1Role(" + i + ")'>" + roleArray[i] + " ";
 }
+
+document.getElementById("roleChoice").onmouseout = function() {mouseOut()};
 
 function p1Role(x) {
 	p1RoleChoice = roleArray[x];
@@ -26,4 +29,8 @@ function p1Role(x) {
 function roleInfoChoice(x) {
 	roleMouse = roleInfo[x];
 	document.getElementById("roleInfoHover").innerHTML = roleMouse;
+}
+
+function mouseOut() {
+  document.getElementById("roleInfoHover").innerHTML = mouseOutText;
 }
